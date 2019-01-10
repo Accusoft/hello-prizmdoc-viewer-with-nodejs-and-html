@@ -4,6 +4,10 @@ A minimal node.js express app which has integrated PrizmDoc Viewer.
 
 ## Setup
 
+### Requirements
+
+- [Node.js](https://nodejs.org) 8 or higher
+
 ### Install dependencies
 
 ```
