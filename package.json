@@ -1,0 +1,29 @@
+{
+  "name": "hello-prizmdoc-viewer-with-nodejs-and-html",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Accusoft/hello-prizmdoc-viewer-with-nodejs-and-html.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@prizmdoc/viewer-core": "^1.0.4",
+    "express": "~4.16.4",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "http-proxy-middleware": "^0.19.1",
+    "morgan": "~1.9.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "json5": "^2.1.0"
+  }
+}

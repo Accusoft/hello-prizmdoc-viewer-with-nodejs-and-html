@@ -1,0 +1,4 @@
+# This critical file is delivered via the @prizmdoc/viewer-core npm package
+# and copied into place at runtime via application startup code (see app.js).
+# Because it is delivered via an npm package, we exclude it from source control.
+viewercontrol.js
