@@ -8,15 +8,9 @@ A minimal node.js express app which has integrated PrizmDoc Viewer.
 
 - [Node.js](https://nodejs.org) 8 or higher
 
-### Install dependencies
-
-```
-npm install
-```
-
 ### Configure Connection to PAS
 
-Configure how to connect to PAS (PrizmDoc Application Services) by either editing the `config.json5` file.
+Configure how to connect to PAS (PrizmDoc Application Services) by editing the `config.json5` file (this is just a JSON file with comments).
 
 If you're just getting started, the easiest thing to do is to use [PrizmDoc Cloud](https://cloud.accusoft.com). We host PAS for you and all you need is your [PrizmDoc Cloud](https://cloud.accusoft.com) API key. If you don't have an API key, you can get one for free at https://cloud.accusoft.com.
 
@@ -43,6 +37,12 @@ Alternately, you can set or override any of these values via environment variabl
 - `API_KEY`
 - `PAS_BASE_URL`
 - `PAS_SECRET_KEY`
+
+### Install dependencies
+
+```
+npm install
+```
 
 ## Running the Sample
 
