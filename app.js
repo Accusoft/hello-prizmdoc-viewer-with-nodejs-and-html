@@ -18,14 +18,6 @@ app.use(logger('dev'));
 // For example, for the file public/stylesheets/style.css, the browser can request /stylesheets/style.css.
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Copy viewercontrol.js into the static viewer-assets directory.
-// The viewer is made up of both UI parts that you can change and a core
-// page-rendering JavaScript file, viewercontrol.js, which you cannot change. This
-// core viewercontrol.js file is delivered via npm as part of the
-// @prizmdoc/viewer-core package, and we just need to make sure that it is copied
-// to the directory that hosts our static assets so that our HTML can request it.
-fs.createReadStream('node_modules/@prizmdoc/viewer-core/viewercontrol.js').pipe(fs.createWriteStream('public/viewer-assets/js/viewercontrol.js'));
-
 // Setup the proxy to PrizmDoc Application Services (PAS).
 // The viewer will send all of its requests for document content to the
 // /prizmdoc-applications-services route and the proxy will forward those requests
