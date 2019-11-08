@@ -4,13 +4,14 @@ const path = require('path');
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const createProxyRouteToPAS = require('./pas/createProxyRouteToPAS');
-const app = express();
-const fs = require('fs');
 const config = require('./config/loadConfig');
+const consolidate = require('consolidate');
+const app = express();
 
 // View engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.engine('hbs', consolidate.handlebars);
 app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(logger('dev'));
 
