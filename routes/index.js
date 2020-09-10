@@ -13,7 +13,7 @@ router.get('/', async (req, res /*, next*/) => {
   let prizmdocRes;
 
   // 1. Create a new viewing session
-  prizmdocRes = await pas.post('/ViewingSession', { // See https://help.accusoft.com/PrizmDoc/v13.5/HTML/webframe.html#pas-viewing-sessions.html
+  prizmdocRes = await pas.post('/ViewingSession', { // See https://help.accusoft.com/PrizmDoc/latest/HTML/pas-viewing-sessions.html
     json: {
       source: {
         type: 'upload',
