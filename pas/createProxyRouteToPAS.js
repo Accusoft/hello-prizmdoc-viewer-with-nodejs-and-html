@@ -1,5 +1,5 @@
 // Proxy which allows the viewer to send requests through this web application back to PrizmDoc.
-const httpProxyMiddleware = require('http-proxy-middleware');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 function createProxyRouteToPAS(path, pasBaseUrl, apiKey) {
   if (pasBaseUrl === undefined) {
@@ -22,12 +22,11 @@ function createProxyRouteToPAS(path, pasBaseUrl, apiKey) {
     headers['acs-api-key'] = apiKey;
   }
 
-  return httpProxyMiddleware(path, {
+  return createProxyMiddleware(path, {
     pathRewrite: pathRewrite,
     target: pasBaseUrl,
     changeOrigin: true, // necessary when converting from HTTP to HTTPS
-    headers,
-    logLevel: 'debug'
+    headers
   });
 }
 
