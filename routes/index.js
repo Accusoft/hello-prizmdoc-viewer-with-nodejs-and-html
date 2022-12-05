@@ -24,6 +24,7 @@ router.get('/', async (req, res /*, next*/) => {
   const viewingSessionId = prizmdocRes.body.viewingSessionId;
 
   // 2. Send the viewingSessionId and viewer assets to the browser right away so the viewer UI can start loading.
+  res.setHeader('Content-Security-Policy', 'script-src \'self\'');
   res.render('index', {
     title: 'Hello PrizmDoc Viewer!',
     viewingSessionId: viewingSessionId
