@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "eslint": "^8.28.0",
-    "json5": "^2.2.1"
+    "json5": "^2.2.3"
   }
 }
