@@ -6,4 +6,7 @@
   // ========== Self-hosted PAS ==========
   //"pasBaseUrl": "YOUR_PAS_BASE_URL",
   //"pasSecretKey": "YOUR_PAS_SECRET_KEY", // The "secretKey" value defined in your PAS config file.
+
+  // ========== Client-side Viewing ==========
+  //"enableClientSideViewing": false
 }

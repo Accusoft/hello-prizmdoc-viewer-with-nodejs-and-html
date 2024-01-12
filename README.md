@@ -44,6 +44,16 @@ Alternately, you can set or override any of these values via environment variabl
 npm install
 ```
 
+### Hybrid Viewing
+
+This sample includes a [Hybrid Viewing](https://help.accusoft.com/PrizmDoc/latest/HTML/client-side-pdf.html) option, which allows users to seamlessly switch between server-side and client-side rendering modes, providing a faster and smoother viewing experience.
+
+To enable client-side viewing, update the following configuration in `config.json5`:
+
+```json
+  "enableClientSideViewing": "true"
+```
+
 ## Running the Sample
 
 To start the app:
