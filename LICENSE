@@ -1,6 +1,6 @@
 MIT License except where otherwise stated
 
-Copyright © 2018-2024 Accusoft Corporation
+Copyright © 2018-2026 Accusoft Corporation
 
 
 Exceptions:
@@ -21,12 +21,13 @@ Exceptions:
       under the MIT license.
       See https://underscorejs.org.
 
-    - The HTML5 Shiv (html5shiv.js) 3.7.0 is dual licensed under the MIT license
-      or the GPL Version 2 license. See https://github.com/aFarkas/html5shiv.
-
     - normalize.css 3.0.0 is copyright Nicolas Gallagher and Jonathan Neal and
       is licensed under the MIT license. See
       https://github.com/necolas/normalize.css.
+
+    - SVG - Material Design Icons 5.6.55 is licensed under the Pictogrammers
+      Free License.
+      See https://github.com/Templarian/MaterialDesign-SVG/blob/v5.6.55/LICENSE
 
     - Fonts are each copyright by their respective authors and are each licensed
       under the SIL Open Font License. See the associated LICENSE.txt file for
